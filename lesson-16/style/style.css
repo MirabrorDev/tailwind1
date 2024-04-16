@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 200px auto;
+
+    min-height: 500px;
+    background-color: rgb(red, green, blue);
+}
+
+.header {
+    margin: 500px 0;
+    height: 100vh;
+    background: url("../image/image.png") fixed no-repeat center center/cover;
+}
+
+.row {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.col {
+    width: 300px;
+    height: 300px;
+    background: url("../image/image.png") no-repeat center center/cover;
+}
+
+.col:nth-child(2) {
+    width: 300px;
+    height: 400px;
+    margin-top: -50px;
+}

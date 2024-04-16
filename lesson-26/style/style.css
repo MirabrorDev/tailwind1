@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_contant {
+    background: url(../image/header_image.png) no-repeat center center/cover;
+}
+
+.header_title::before{
+    content: "Step into the";
+    display: block;
+}
+
+.header_title::after{
+    content: "playground";
+    display: block;
+}

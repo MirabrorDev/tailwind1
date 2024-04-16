@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.wrapper {
+    width: 100%;
+    display: flex;
+    padding-top: 450px;
+} 
+
+.ball {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation-name: animation-ball;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.ball1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation-name: animation-ball;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+
+@keyframes animation-ball{
+    0%{
+        margin-top: 0;
+        transform: rotate(0);
+    }
+    50%{
+        margin-top: -300px;
+        transform: rotate(360deg);
+        border: 20px solid aqua;
+    }
+    100%{
+        margin-top: 0;
+        transform: rotate(0);
+    }
+}
